@@ -1,0 +1,299 @@
+/* --- 1. CONFIGURAÇÕES GERAIS --- */
+:root {
+  --cor-primaria: #007bff;
+  --cor-secundaria: #6c757d;
+  --cor-fundo: #ffffff;
+  --cor-texto: #212529;
+  --font-padrao: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; /* Remove sublinhado de links globalmente */
+}
+
+body {
+  font-family: var(--font-padrao);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* --- 2. CLASSE DE ALINHAMENTO GLOBAL --- */
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 4%; /* 4% de respiro nas laterais para telas mobile */
+}
+
+/* --- 3. HEADER --- */
+header {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo com Linha Ajustada */
+.logo p {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--cor-texto);
+  border-bottom: 2px solid var(--cor-texto);
+  display: inline-block;
+  padding-bottom: 0px;
+  line-height: 0.8;
+}
+
+.header-link {
+  display: flex;
+  gap: 40px;
+}
+
+.header-link a {
+  color: var(--cor-texto);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.header-link a:hover {
+  color: var(--cor-primaria);
+}
+
+/* --- 4. SECTION PRINCIPAL --- */
+.container-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  gap: 40px;
+}
+
+.section-div h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--cor-texto);
+}
+
+.section-div p {
+  font-size: 18px;
+  color: var(--cor-secundaria);
+  margin-bottom: 30px;
+  color: var(--cor-texto);
+}
+
+/* --- 5. BOTÕES --- */
+.btn-servicos {
+  display: inline-block;
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn-servicos:hover {
+  background-color: #0056b3;
+}
+
+.img-perfil img {
+  max-width: 100%;
+  width: 500px;
+}
+
+/* --- BLOCOS DE CONTEÚDO (Clientes, Serviços, etc) --- */
+.article-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+}
+
+.article-clientes {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--cor-texto);
+}
+
+.article-servicos {
+  max-width: 1280px;
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.article-servicos div {
+  padding: 15px;
+  padding-top: 0;
+}
+
+.article-servicos h1 {
+  font-size: 36px;
+  color: var(--cor-texto);
+}
+
+.article-conheca {
+  text-align: center;
+  color: #f75c4e;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.article-text {
+  text-align: center;
+}
+
+.article-suporte {
+  display: flex;
+  max-width: 1280px;
+  margin: 50px auto;
+  justify-content: center;
+  text-align: center;
+  gap: 100px;
+}
+
+.article-suporte h3 p {
+  text-align: center;
+  color: var(--cor-texto);
+}
+
+.article-email {
+  max-width: 1280px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  color: var(--cor-texto);
+  gap: 50px;
+}
+
+.article-tempo {
+  color: #f75c4e;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.article-email h2 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.article-captura {
+  margin-top: 8%;
+}
+
+/* --- FORMULÁRIO (CORRIGIDO) --- */
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  margin-top: 30px;
+}
+
+.form-contato input {
+  background: #f5f6fb;
+  padding: 15px 20px;
+  border: 2px solid #2d9bf0; /* Borda Azul */
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  color: #333;
+  width: 100%;
+  font-family: var(--font-padrao);
+}
+
+.form-contato input:focus {
+  background-color: #ffffff;
+  border-color: #1877f2;
+}
+
+.form-contato button {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+  font-family: var(--font-padrao);
+  transition: background 0.3s;
+}
+
+.form-contato button:hover {
+  background-color: #145dbf;
+}
+
+/* --- RODAPÉ (AJUSTADO: TEXTO EM CIMA, IMAGENS EMBAIXO) --- */
+.footer-portfolio {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  /* Permite que o conteúdo quebre para a linha de baixo */
+  flex-wrap: wrap;
+
+  /* Removemos o align-items: flex-start pois agora vamos empilhar */
+  gap: 40px; /* Espaço entre as linhas */
+  padding: 0 4%;
+}
+
+/* Área do Texto (Agora ocupa a linha inteira) */
+.footer-header {
+  width: 100%; /* Força o texto a ocupar todo o topo */
+  margin-bottom: 30px; /* Dá um espaço antes das imagens começarem */
+}
+
+.footer-header p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f75c4e;
+  margin-bottom: 5px;
+  text-transform: none;
+}
+
+.footer-header h3 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--cor-texto);
+}
+
+/* Imagens (Cards) */
+.footer-img {
+  /* Mantém flex: 1 para que as 3 imagens dividam o espaço da linha de baixo igualmente */
+  flex: 1;
+  min-width: 250px; /* Garante que não fiquem muito espremidas */
+}
+
+.footer-img img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: block; /* Remove espaços fantasmas abaixo da imagem */
+}
+
+.footer-img img:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsividade */
+/*Seguir com @mediaqueri*/
