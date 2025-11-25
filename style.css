@@ -296,4 +296,85 @@ header {
 }
 
 /* Responsividade */
-/*Seguir com @mediaqueri*/
+@media (max-width: 1024px) {
+  /* Ajuste geral dos títulos para não ficarem giganes*/
+
+  .section-div h1 {
+    font-size: 45px;
+  }
+
+  /*Diminuir o gap (espaço) exagerado entre serviços*/
+  .article-suporte {
+    gap: 40px;
+  }
+}
+
+/*Para celulares (telas menores que 768px)*/
+@media (max-width: 768px) {
+  /*1. Header: Empilhar logo e menu*/
+  .container-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header-link {
+    gap: 20px; /* Menos espaço entre links */
+  }
+
+  /*2. Seção Principal: Texto em cima*/
+  .container-section {
+    flex-direction: column;
+    text-align: center; /*Centralizar o texto*/
+    padding: 20px;
+  }
+
+  /* Importante: A imagem não pode ser fixa em 500px, senão ela quebra o layout*/
+  .img-perfil img {
+    width: 80%; /*Ocupa 80% da tela*/
+    max-width: 400px; /* Mas não passa de 400px*/
+    margin-top: 30px;
+  }
+
+  /*3. Clientes (Logos): Um embaixo do outro ou em coluna*/
+  .article-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  /*4. Serviços (Consultoria, Mkt, Sites)*/
+  .article-suporte {
+    flex-direction: column; /* Empilha os cards*/
+    align-items: center; /* Centraliza*/
+  }
+
+  /*5. Seção de E-mail: Imagem some ou vai pro topo, texto embaixo*/
+  .article-email {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .article-email img {
+    width: 80%; /*Reduz a imagem de "pessoas trabalho"*/
+    max-width: 300px;
+  }
+
+  .article-captura {
+    margin-top: 20px;
+  }
+
+  .form-contato {
+    align-items: center; /* Centraliza o botão e input*/
+    margin: 30px auto 0 auto; /* Centralizar o form na tela*/
+  }
+
+  /* Ajuste final de font para celular*/
+  .section-div h1 {
+    font-size: 32px; /* Beem menor para caber*/
+  }
+
+  .footer-header h3 {
+    font-size: 32px;
+  }
+}
