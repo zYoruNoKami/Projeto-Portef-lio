@@ -40,10 +40,7 @@ Google Fonts: Tipografia personalizada (Fonte Poppins).
 
 🚀 Como rodar o projeto localmente
 
-Clone o repositório:
-
-git clone(https://github.com/zYoruNoKami/Projeto-Portef-lio.git)
-
+Clone o repositório: git clone(https://github.com/zYoruNoKami/Projeto-Portef-lio.git)
 
 Abra a pasta do projeto:
 Navegue até a pasta onde você clonou os arquivos.
