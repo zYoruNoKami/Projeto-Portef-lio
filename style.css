@@ -7,12 +7,15 @@
   --font-padrao: "Poppins", sans-serif;
 }
 
+/* --- CONFIGURAÇÃO PARA TODA A PAGINAS ---*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none; /* Remove sublinhado de links globalmente */
 }
+
+/* --- CONFIGURAÇÃO PADRÃO PARA NÃO PRECISAR FICAR COLOCANDO COR E FONTS PELO CSS ---*/
 
 body {
   font-family: var(--font-padrao);
@@ -22,7 +25,7 @@ body {
   min-height: 100vh;
 }
 
-/* --- 2. CLASSE DE ALINHAMENTO GLOBAL --- */
+/* --- NAV LINK --- */
 .interface {
   max-width: 1280px;
   margin: 0 auto;
@@ -41,7 +44,6 @@ header {
   align-items: center;
 }
 
-/* Logo com Linha Ajustada */
 .logo p {
   font-size: 28px;
   font-weight: 700;
@@ -67,7 +69,7 @@ header {
   color: var(--cor-primaria);
 }
 
-/* --- 4. SECTION PRINCIPAL --- */
+/* --- SECTION CONTAINER APRESENTAÇÃO --- */
 .container-section {
   display: flex;
   align-items: center;
@@ -91,7 +93,7 @@ header {
   color: var(--cor-texto);
 }
 
-/* --- 5. BOTÕES --- */
+/* --- BOTÕES --- */
 .btn-servicos {
   display: inline-block;
   background-color: var(--cor-primaria);
@@ -193,7 +195,7 @@ header {
   margin-top: 8%;
 }
 
-/* --- FORMULÁRIO (CORRIGIDO) --- */
+/* --- FORMULÁRIO --- */
 .form-contato {
   display: flex;
   flex-direction: column;
@@ -237,7 +239,7 @@ header {
   background-color: #145dbf;
 }
 
-/* --- RODAPÉ (AJUSTADO: TEXTO EM CIMA, IMAGENS EMBAIXO) --- */
+/* --- RODAPÉ --- */
 .footer-portfolio {
   width: 100%;
   max-width: 1280px;
@@ -254,7 +256,6 @@ header {
   padding: 0 4%;
 }
 
-/* Área do Texto (Agora ocupa a linha inteira) */
 .footer-header {
   width: 100%; /* Força o texto a ocupar todo o topo */
   margin-bottom: 30px; /* Dá um espaço antes das imagens começarem */
@@ -295,7 +296,7 @@ header {
   transform: translateY(-5px);
 }
 
-/* Responsividade */
+/* --- RESPONSIVIDADE 1024PX --- */
 @media (max-width: 1024px) {
   /* Ajuste geral dos títulos para não ficarem giganes*/
 
@@ -307,9 +308,13 @@ header {
   .article-suporte {
     gap: 40px;
   }
+  .article-email img {
+    width: 90%; /*Reduz a imagem de "pessoas trabalho"*/
+    max-width: 500px;
+  }
 }
 
-/*Para celulares (telas menores que 768px)*/
+/* --- RESPONSIVIDADE 768PX --- */
 @media (max-width: 768px) {
   /*1. Header: Empilhar logo e menu*/
   .container-header {
@@ -357,7 +362,7 @@ header {
 
   .article-email img {
     width: 80%; /*Reduz a imagem de "pessoas trabalho"*/
-    max-width: 300px;
+    max-width: 400px;
   }
 
   .article-captura {
