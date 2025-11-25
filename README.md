@@ -3,10 +3,7 @@
 Bem-vindo ao repositório do meu site de portfólio pessoal! Este projeto foi desenvolvido para apresentar meus serviços, clientes e formas de contato de maneira profissional e elegante.
 
 <div align="center">
-
 <img width="1903" height="778" alt="image" src="https://github.com/user-attachments/assets/2270957f-2d78-4325-8990-9219c9628f78" />
-
-<img src="https://www.google.com/search?q=https://via.placeholder.com/800x400%3Ftext%3DPreview%2Bdo%2BSite" alt="Preview do Site" width="100%">
 </div>
 
 🔗 Link do Projeto (Demo)
@@ -45,7 +42,7 @@ Google Fonts: Tipografia personalizada (Fonte Poppins).
 
 Clone o repositório:
 
-git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/zYoruNoKami/Projeto-Portef-lio.git)
+git clone(https://github.com/zYoruNoKami/Projeto-Portef-lio.git)
 
 
 Abra a pasta do projeto:
